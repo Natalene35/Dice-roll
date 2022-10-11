@@ -1,0 +1,84 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(205, 245, 231);
+    max-width: 1400px;
+    margin: auto;
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background-color: aquamarine;
+    border: 2px solid black;
+}
+
+.titleDice{
+    max-width: 5rem;
+    height: auto;
+    margin-right: 1rem;
+    -webkit-animation:spin 4s linear infinite;
+-moz-animation:spin 4s linear infinite;
+animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+h1 {
+    font-family: 'Merienda', cursive;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+
+.dicePicture {
+    width: 7rem;
+    height: auto;
+    margin: 2rem;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.rollButton {
+    width: 6rem;
+    height: 1.7rem;
+    box-shadow: 2px 2px 5px grey;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.rollButton:hover {
+    background-color: rgb(236, 156, 193);
+    scale: 1.05;
+}
+
+form {
+    margin: 2rem auto;
+    width: 30rem;
+    padding: 2rem;
+}
+
+.square {
+    display: none;
+    width: 6.7rem;
+    height: 6.7rem;
+    background: white;
+    border-radius: 15px;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 7rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 2rem;
+    box-shadow: 5px 5px 10px grey;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="titleContainer">
+        <img class="titleDice" src="img/de.png" alt="Image de dés">
+        <h1>Lancer de dé</h1>
+    </div>
+
+    <form action="">
+        <p>Choisis le nombre de faces de ton dé :</p>
+        <div>
+            <input type="radio" name="dice" id="face6" value="6" checked>
+            <label for="face6">Dé à 6 faces</label>
+
+            <input type="radio" name="dice" id="face10" value="10">
+            <label for="face10">Dé à 10 faces</label>
+
+            <input type="radio" name="dice" id="face20" value="20">
+            <label for="face20">Dé à 20 faces</label>
+        </div>
+    </form>
+
+    <div class="container">
+        <img class="dicePicture" src="img/dice1.png" alt="Face du dé 1">
+        <div class="square"></div>
+        <button class="rollButton">Lancer le dé</button>
+
+        <!-- <p class="result"></p> -->
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
