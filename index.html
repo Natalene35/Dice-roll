@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Roll Dice</title>
 </head>
 
 <body>
@@ -18,28 +18,33 @@
         <h1>Lancer de dé</h1>
     </div>
 
-    <form action="">
-        <p>Choisis le nombre de faces de ton dé :</p>
-        <div>
-            <input type="radio" name="dice" id="face6" value="6" checked>
-            <label for="face6">Dé à 6 faces</label>
-
-            <input type="radio" name="dice" id="face10" value="10">
-            <label for="face10">Dé à 10 faces</label>
-
-            <input type="radio" name="dice" id="face20" value="20">
-            <label for="face20">Dé à 20 faces</label>
-        </div>
-    </form>
-
     <div class="container">
-        <img class="dicePicture" src="img/dice1.png" alt="Face du dé 1">
-        <div class="square"></div>
-        <button class="rollButton">Lancer le dé</button>
+        <form action="">
+            <p>Choisis le nombre de faces de ton dé :</p>
+            <div class="inputContainer">
+                <div>
+                <input type="radio" name="dice" id="face6" value="6" checked>
+                <label for="face6">Dé à 6 faces</label>
+            </div>
+                <div>
+                <input type="radio" name="dice" id="face10" value="10">
+                <label for="face10">Dé à 10 faces</label>
+            </div>
+                <div>
+                <input type="radio" name="dice" id="face20" value="20">
+                <label for="face20">Dé à 20 faces</label>
+            </div>
+            </div>
+        </form>
 
-        <!-- <p class="result"></p> -->
+        <div class="diceContainer">
+            <img class="dicePicture" src="img/dice1.png" alt="Face du dé 1">
+            <div class="square"></div>
+            <button class="rollButton">Lancer le dé</button>
+
+            <!-- <p class="result"></p> -->
+        </div>
     </div>
-
     <script src="app.js"></script>
 </body>
 
